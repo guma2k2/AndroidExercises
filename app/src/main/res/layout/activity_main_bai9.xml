@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainBai9">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="BAI 9-NHÓM 8"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#F80000"
+        android:background="#1491CA"/>
+    <EditText
+        android:id="@+id/ed_bai9_thongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap thong bao"/>
+    <Button
+        android:id="@+id/btn_bai9_thongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thong bao"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/tv_danhsachsp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Danh sach san pham"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#F80000"
+        android:background="#1491CA"/>
+    <EditText
+        android:id="@+id/ed_bai9_tensp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap ten san pham"/>
+    <EditText
+        android:id="@+id/ed_bai9_giasp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhap gia san pham"/>
+    <Button
+        android:id="@+id/btn_bai9_them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Them san pham"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_bai9_danhsach"/>
+</LinearLayout>
