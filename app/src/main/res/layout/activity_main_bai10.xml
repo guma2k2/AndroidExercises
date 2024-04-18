@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainBai10">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="BAI 10 - NHÓM 8"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#F80000"
+        android:background="#1491CA"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/denmo"
+        android:layout_gravity="center"
+        />
+    <EditText
+        style="@style/edt"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/baseline_add_shopping_cart_24"
+        android:id="@+id/edt_bai10_tk"
+        android:hint="@string/edttk"/>
+
+    <EditText
+        style="@style/edt"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/baseline_checklist_24"
+        android:id="@+id/edt_bai10_mk"
+        android:hint="@string/edtmk"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi nho mat khau"
+        android:id="@+id/cb_bai10_GhiMatKhau"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap"
+        android:id="@+id/btn_bai10_dangnhap"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btn_bai10_bieudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bieu do" />
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/piechart_bai10"/>
+</LinearLayout>

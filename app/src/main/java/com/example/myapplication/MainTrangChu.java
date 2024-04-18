@@ -14,10 +14,15 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+import java.util.List;
+// Bai 6
 public class MainTrangChu extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ActionBarDrawerToggle drawerToggle;
+
+    public List<Product> products = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,21 +41,21 @@ public class MainTrangChu extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment = null;
 
                 if(item.getItemId() == R.id.mnDanhSach){
-                   /* Intent intent = new Intent(MainTrangChu.this, MainDanhSach.class);
-                    startActivity(intent);*/
-                    fragment = new FragmentDanhSach();
+                    Fragment fragmentDanhSach = new FragmentDanhSach();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flContent,fragmentDanhSach).commit();
+                    drawerLayout.close();
                 }
                 if(item.getItemId() == R.id.mnCart){
-                    fragment = new FragmentGioHang();
+                    Fragment fragment = new FragmentGioHang(products);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flContent,fragment).commit();
+                    drawerLayout.close();
                 }
                 if(item.getItemId() == R.id.mnLogout){
                     Toast.makeText(MainTrangChu.this, "Danh sach", Toast.LENGTH_SHORT).show();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.flContent,fragment).commit();
-                drawerLayout.close();
+
                 return false;
             }
         });

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="edttk">Nhập tài khoản</string>
+    <string name="edtmk">Nhập mật khẩu</string>
+    <string name="btnlogin">Đăng nhập</string>
+</resources>

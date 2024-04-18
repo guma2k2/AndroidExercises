@@ -12,7 +12,7 @@ import java.util.List;
 
 public class DatabaseSP extends SQLiteOpenHelper {
     public DatabaseSP(@Nullable Context context) {
-        super(context, "dbSanPham", null, 1);
+        super(context, "dbSanPham", null, 2);
     }
 
     @Override

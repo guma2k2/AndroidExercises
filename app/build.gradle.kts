@@ -42,6 +42,7 @@ dependencies {
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.github.bumptech.glide:glide:5.0.0-rc01")
     implementation("com.google.firebase:firebase-database:20.3.1")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     testImplementation("junit:junit:4.13.2")
     implementation("com.squareup.picasso:picasso:2.8")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

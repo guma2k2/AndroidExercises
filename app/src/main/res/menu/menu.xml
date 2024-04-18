@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/mnDanhSach"
-        android:title="DANH SACH"
+        android:title="@string/danh_sach"
         android:icon="@drawable/baseline_checklist_24"
         app:showAsAction="always"
     />
     <item android:id="@+id/mnCart"
-        android:title="GIO HANG"
+        android:title="@string/gio_hang"
         android:icon="@drawable/baseline_add_shopping_cart_24"
         app:showAsAction="always"
         />
     <item android:id="@+id/mnLogout"
-        android:title="THOAT"
+        android:title="@string/cai_dat"
         android:icon="@drawable/baseline_build_24"
         app:showAsAction="always"
         />

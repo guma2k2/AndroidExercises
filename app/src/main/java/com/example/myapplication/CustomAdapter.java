@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,9 +30,19 @@ public class CustomAdapter extends ArrayAdapter  {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         convertView = LayoutInflater.from(context).inflate(resource, null);
-        ImageView imvImageItem = convertView.findViewById(R.id.imv_imageItem);
-        TextView tvNameItem = convertView.findViewById(R.id.tv_nameItem);
+        ImageView imvImageItem = convertView.findViewById(R.id.iv_bai6_product);
+        TextView tvNameItem = convertView.findViewById(R.id.tv_bai6_product);
+        Button button = convertView.findViewById(R.id.btn_add_to_cart);
         Product product = data.get(position);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (context instanceof MainTrangChu) {
+                    System.out.println(product);
+                    ((MainTrangChu) context).products.add(product);
+                }
+            }
+        });
         tvNameItem.setText(product.getName());
         if (product.getType().equals("Samsung")){
             imvImageItem.setImageResource(R.drawable.samsung);

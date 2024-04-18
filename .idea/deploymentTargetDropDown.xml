@@ -2,24 +2,8 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="MainBai6">
+      <entry key="MainBai10">
         <State />
-      </entry>
-      <entry key="MainBai7">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Admin\.android\avd\Pixel_4_XL_API_34_2.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-03-15T06:48:41.307951400Z" />
-        </State>
       </entry>
       <entry key="MainBai8">
         <State />
@@ -42,6 +26,9 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-03-15T07:42:11.059255400Z" />
         </State>
+      </entry>
+      <entry key="Mainbai3Activity">
+        <State />
       </entry>
       <entry key="app">
         <State />
