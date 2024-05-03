@@ -47,14 +47,14 @@ public class MainBai10 extends AppCompatActivity {
                 String mk = edt_bai10_mk.getText().toString();
                 if (tk.equals(mk)) {
                     dung+=1;
-                    Toast.makeText(MainBai10.this, "Dang nhap thanh cng", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText(MainBai10.this, "Đăng nhập thành công", Toast.LENGTH_SHORT ).show();
                     if(cb_bai10_GhiMatKhau.isChecked()) {
                         ghiNhoMatKhau();
                     } else {
                         khongGhiMatKhau();
                     }
                 }else {
-                    Toast.makeText(MainBai10.this, "Dang nhap thanh cng", Toast.LENGTH_SHORT ).show();
+                    Toast.makeText(MainBai10.this, "Đăng nhập thất bại", Toast.LENGTH_SHORT ).show();
                 }
             }
         });
@@ -68,11 +68,12 @@ public class MainBai10 extends AppCompatActivity {
 
     private void hienThiBieuDo() {
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
+        ArrayList<String> trangThai = new ArrayList<>();
+        trangThai.add("Thành công");
+        trangThai.add("Thất bại");
         pieEntries.add(new PieEntry(dung));
         pieEntries.add(new PieEntry(tong - dung));
-        ArrayList<String> trangThai = new ArrayList<>();
-        trangThai.add("Thanh cong");
-        trangThai.add("That bai");
+
         ArrayList<Integer> data_color = new ArrayList<>();
         data_color.add(Color.BLUE);
         data_color.add(Color.RED);

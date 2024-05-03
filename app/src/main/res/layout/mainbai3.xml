@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="BAI 3-NHÓM 8"
+        android:text="NGÔ ĐỨC THUẬN - BÀI 1"
         android:textStyle="bold"
         android:textSize="25dp"
         android:textColor="#F80000"
@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,6 +37,7 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="10dp"
         android:id="@+id/til2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til3"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

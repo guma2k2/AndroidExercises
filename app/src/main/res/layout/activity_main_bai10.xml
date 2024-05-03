@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="BAI 10 - NHÓM 8"
+        android:text="NGÔ ĐỨC THUẬN - BÀI 9"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="20sp"
         android:textColor="#F80000"
         android:background="#1491CA"/>
     <ImageView
@@ -23,6 +23,7 @@
         android:layout_gravity="center"
         />
     <EditText
+        android:layout_marginBottom="15dp"
         style="@style/edt"
         android:paddingLeft="10dp"
         android:drawableLeft="@drawable/baseline_add_shopping_cart_24"
@@ -30,6 +31,7 @@
         android:hint="@string/edttk"/>
 
     <EditText
+        android:inputType="textPassword"
         style="@style/edt"
         android:paddingLeft="10dp"
         android:drawableLeft="@drawable/baseline_checklist_24"
@@ -45,7 +47,7 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dang nhap"
+        android:text="Đăng nhập"
         android:id="@+id/btn_bai10_dangnhap"/>
 
     <Button
@@ -53,7 +55,7 @@
         android:id="@+id/btn_bai10_bieudo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bieu do" />
+        android:text="Biểu đồ" />
     <com.github.mikephil.charting.charts.PieChart
         android:layout_width="match_parent"
         android:layout_height="match_parent"
